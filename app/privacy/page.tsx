@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
           </h1>
 
           <p className="mt-6 text-lg text-cyan-50/90">
-            Last updated: August 5, 2026
+            Last updated: November 8, 2026
           </p>
         </div>
       </section>
@@ -211,6 +211,44 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
+          <section id="sms-privacy">
+            <h2 className="text-3xl font-bold">Mobile information and SMS reminders</h2>
+            <p className="mt-5 leading-8 text-slate-600">
+              We are preparing an optional funding and payment reminder text-message
+              program. Enrollment is not currently available through this website.
+              Before messages begin, we will request your separate verbal consent
+              during a call and record your consent, the number you authorize,
+              the date, and the disclosures provided. Giving us a telephone number
+              or submitting our general contact form does not by itself enroll you.
+            </p>
+            <p className="mt-5 leading-8 text-slate-600">
+              For this program, we will use your mobile number, consent record,
+              reminder schedule, and messaging preferences to administer reminders
+              and honor opt-out requests. We will not sell mobile information or
+              share it with third parties or affiliates for their marketing or
+              promotional purposes. SMS opt-in data and consent will not be shared
+              for third parties&apos; own purposes. Information may be provided to
+              messaging service providers only as necessary to operate the program
+              on our behalf, or disclosed as required by law. These restrictions
+              apply to SMS information notwithstanding the general sharing section above.
+            </p>
+            <p className="mt-5 leading-8 text-slate-600">
+              Before launch, we will enable STOP to end program messages and HELP
+              to provide support information. You may also contact us at{' '}
+              <a className="font-semibold text-teal-800 underline" href="mailto:agent@diamondconsultingadvisory.com">
+                agent@diamondconsultingadvisory.com
+              </a>{' '}
+              about your preferences. We will retain consent and opt-out records as
+              needed to honor your choices and meet applicable recordkeeping requirements.
+            </p>
+            <p className="mt-5 leading-8 text-slate-600">
+              See our{' '}
+              <Link className="font-semibold text-teal-800 underline" href="/terms#sms-reminders">
+                SMS reminder program terms
+              </Link>{' '}
+              for the planned message frequency, charges, and cancellation instructions.
+            </p>
+          </section>
           <section>
             <h2 className="text-3xl font-bold">Contact</h2>
 

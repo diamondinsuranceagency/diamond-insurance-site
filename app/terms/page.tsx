@@ -28,7 +28,7 @@ export default function TermsOfUsePage() {
           </h1>
 
           <p className="mt-6 text-lg text-cyan-50/90">
-            Last updated: August 5, 2026
+            Last updated: November 8, 2026
           </p>
         </div>
       </section>
@@ -225,6 +225,57 @@ export default function TermsOfUsePage() {
             </p>
           </section>
 
+          <section id="sms-reminders">
+            <h2 className="text-3xl font-bold">SMS funding and payment reminders</h2>
+            <p className="mt-5 leading-8 text-slate-600">
+              Diamond Insurance Agency is preparing an optional automated text-message
+              program for funding and payment reminders associated with your insurance
+              application or policy. This program is not yet active. The controls
+              described below will be configured and tested before messages begin.
+            </p>
+            <h3 className="mt-6 text-xl font-bold">Enrollment and frequency</h3>
+            <p className="mt-5 leading-8 text-slate-600">
+              We will ask for your separate verbal consent during a call after
+              explaining the program. Existing client status, website use, or providing
+              a telephone number does not by itself enroll you. Consent is voluntary
+              and is not a condition of purchasing insurance or other services.
+              The program is for payment and funding reminders, not marketing messages.
+            </p>
+            <p className="mt-5 leading-8 text-slate-600">
+              Reminders are planned for approximately 72 hours before a scheduled
+              payment is due. Message frequency will vary with your payment schedule;
+              a monthly payment schedule generally means one reminder each month.
+              Enrollment, support, and opt-out confirmations may add messages.
+              Message and data rates may apply according to your mobile plan.
+            </p>
+            <h3 className="mt-6 text-xl font-bold">Stopping messages and getting help</h3>
+            <p className="mt-5 leading-8 text-slate-600">
+              Once the program launches, reply STOP to any program message to opt out.
+              We will stop program messages and may send one non-promotional opt-out
+              confirmation. You may also ask us directly to stop texts. Reply HELP
+              for support information, or email{' '}
+              <a className="font-semibold text-teal-800 underline" href="mailto:agent@diamondconsultingadvisory.com">
+                agent@diamondconsultingadvisory.com
+              </a>{' '}
+              or call <a className="font-semibold text-teal-800 underline" href="tel:+12105609823">(210) 560-9823</a>.
+              Opting out of texts does not cancel your insurance policy or change
+              any payment obligation. Tell us if your mobile number changes.
+            </p>
+            <h3 className="mt-6 text-xl font-bold">Delivery, privacy, and payment responsibilities</h3>
+            <p className="mt-5 leading-8 text-slate-600">
+              Texts may be delayed or not delivered. Carriers are not liable for
+              delayed or undelivered messages. Reminders do not replace policy
+              documents or carrier notices, extend payment deadlines, guarantee
+              coverage, or confirm receipt of payment. Verify payment and coverage
+              questions with your insurance carrier or agent.
+            </p>
+            <p className="mt-5 leading-8 text-slate-600">
+              Do not send Social Security numbers, bank or payment-card details,
+              medical information, or other sensitive information by text. See our{' '}
+              <Link className="font-semibold text-teal-800 underline" href="/privacy#sms-privacy">Privacy Policy</Link>{' '}
+              for how mobile information and consent records will be handled.
+            </p>
+          </section>
           <section>
             <h2 className="text-3xl font-bold">Contact</h2>
 
