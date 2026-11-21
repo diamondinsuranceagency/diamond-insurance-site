@@ -113,14 +113,23 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
+            <h2 className="text-3xl font-bold">Client reviews</h2>
+            <p className="mt-5 leading-8 text-slate-600">
+              If you use a review invitation, we store your review, rating and optional
+              display name for moderation and publication with your permission. Do not
+              include policy numbers, health details or private contact information.
+              Contact us if you want to ask about or remove a review you submitted.
+            </p>
+          </section>
+
+          <section>
             <h2 className="text-3xl font-bold">
               Scheduling and third-party services
             </h2>
 
             <p className="mt-5 leading-8 text-slate-600">
               This website may link to third-party services, including Calendly
-              and Agent Verified. Those services operate under their own privacy
-              policies and terms.
+              which operates under its own privacy policy and terms.
             </p>
 
             <p className="mt-5 leading-8 text-slate-600">

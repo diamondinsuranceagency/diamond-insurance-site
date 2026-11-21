@@ -1,42 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Review } from "../data/reviews";
 
 type ReviewsCarouselProps = {
   reviews: Review[];
 };
 
-function shuffleReviews(items: Review[]) {
-  const shuffled = [...items];
-
-  for (let index = shuffled.length - 1; index > 0; index--) {
-    const randomIndex = Math.floor(Math.random() * (index + 1));
-
-    [shuffled[index], shuffled[randomIndex]] = [
-      shuffled[randomIndex],
-      shuffled[index],
-    ];
-  }
-
-  return shuffled;
-}
-
 export default function ReviewsCarousel({
   reviews,
 }: ReviewsCarouselProps) {
-  const [randomizedReviews, setRandomizedReviews] =
-    useState<Review[]>(reviews);
-
   const [expandedReviews, setExpandedReviews] = useState<Set<string>>(
     new Set(),
   );
 
-  useEffect(() => {
-    setRandomizedReviews(shuffleReviews(reviews));
-  }, [reviews]);
-
-  if (randomizedReviews.length === 0) {
+  if (reviews.length === 0) {
     return (
       <div className="rounded-3xl bg-white p-8 text-center text-slate-700 shadow-sm">
         No reviews available yet.
@@ -44,7 +22,7 @@ export default function ReviewsCarousel({
     );
   }
 
-  const displayedReviews = randomizedReviews.slice(0, 10);
+  const displayedReviews = reviews.slice(0, 10);
   const scrollingReviews = [...displayedReviews, ...displayedReviews];
 
   function toggleReview(reviewKey: string) {
@@ -105,20 +83,7 @@ export default function ReviewsCarousel({
                     </p>
                   </div>
 
-                  <span className="rounded-full bg-teal-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-teal-700">
-                    Verified
-                  </span>
                 </div>
-
-                <a
-                  href={review.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-teal-800 underline-offset-4 hover:underline"
-                >
-                  View original review
-                  <span aria-hidden="true">↗</span>
-                </a>
               </div>
             </article>
           );

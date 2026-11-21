@@ -9,9 +9,6 @@ import { reviews } from "./data/reviews";
 
 const calendlyUrl = "https://calendly.com/diamondinsurance/life";
 
-const agentVerifiedReviewsUrl =
-  "https://www.agentverified.com/united-states/miami/florida/life-insurance-agent/john-williams/reviews";
-
 const processSteps = [
   {
     number: "01",
@@ -337,21 +334,16 @@ export default function Homepage() {
             </p>
 
             <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
-              Real feedback. Independently verifiable.
+              What clients say
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Read client experiences and verify each review through the
-              original Agent Verified source.
+              Read what clients shared about working with Diamond Insurance Agency.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-300">
               <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-md">
-                {reviews.length} client reviews
-              </span>
-
-              <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-md">
-                Source-linked feedback
+                Client testimonials
               </span>
 
               <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-md">
@@ -372,14 +364,6 @@ export default function Homepage() {
               See All Reviews
             </Link>
 
-            <a
-              href={agentVerifiedReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-white/20 bg-white/5 px-8 py-4 font-bold text-white backdrop-blur-md transition hover:-translate-y-1 hover:bg-white/10"
-            >
-              Verify on Agent Verified
-            </a>
           </div>
         </div>
       </section>

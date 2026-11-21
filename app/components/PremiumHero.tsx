@@ -143,10 +143,10 @@ export default function PremiumHero({
 
           <div className="absolute -bottom-5 -left-5 rounded-2xl border border-white/20 bg-white px-5 py-4 shadow-xl">
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-teal-700">
-              Agent Verified
+              Client experiences
             </p>
             <p className="mt-1 text-sm font-semibold text-slate-800">
-              Reviews linked to source
+              Read client reviews
             </p>
           </div>
         </div>
